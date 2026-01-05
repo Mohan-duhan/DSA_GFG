@@ -12,7 +12,7 @@ class Solution {
         maxSum = currSum;
         
         for(int i = k;i<n;i++){
-            currSum += arr[i] - arr[i-k];
+            currSum += arr[i] - arr[i-k];//us window ka pehle nikalo or next dalo 
             maxSum = max(maxSum, currSum);
         }
         return maxSum;
